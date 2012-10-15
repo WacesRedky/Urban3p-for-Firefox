@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+
+<prefwindow id="urban3p-prefs" title="Настройки Жителя"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	windowtype="prefwindow"
+	buttons="accept,cancel"
+>
+
+<prefpane id="urban3p-prefpane">
+	<preferences>
+		<preference id="urban3p-username-pref" name="extensions.urban3p.username" type="string" />
+        <preference id="urban3p-hideMailCount-pref" name="extensions.urban3p.hideMailCount" type="bool" />
+	</preferences>
+	
+	<vbox>
+    	<hbox align="center">
+        	<label control="urban3p-username" value="Житель:"/>
+        	<textbox id="urban3p-username" preference="urban3p-username-pref" flex="1"/>
+    	</hbox>
+        <spacer style="height: 6px"/>
+    	<checkbox id="urban3p-hideMailCount" preference="urban3p-hideMailCount-pref" label="Не показывать кол-во новых сообщений."/>    
+    </vbox>
+</prefpane>
+ 
+</prefwindow>

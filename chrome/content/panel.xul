@@ -4,9 +4,13 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
  <statusbar id="status-bar">
 	<statusbarpanel id="urban3p-panel" context="urban3p-menu" >
-        <image src="chrome://urban3p/content/urban3p.ico" style="cursor:pointer" tooltiptext="Перейти на urban3p." 
+        <image src="chrome://urban3p/content/urban3p.ico" 
+            style="cursor:pointer" 
+            tooltiptext="Перейти на urban3p." 
             onclick="urban3pLoadProfile(event)"/>
-		<label id="urban3p-label" value="Urban3p!" tooltiptext="Щелкните, чтобы настроить." 
+		<label id="urban3p-label" 
+            value="Urban3p!" 
+            tooltiptext="Щелкните, чтобы настроить." 
             onclick="urban3pLeftClick(event)"/>
 	</statusbarpanel> 
  </statusbar>
